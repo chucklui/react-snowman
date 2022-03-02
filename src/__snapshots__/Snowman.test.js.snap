@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shows end game state on loss 1`] = `
+<div>
+  <div
+    class="Snowman"
+  >
+    <img
+      alt="4"
+      src="4.png"
+    />
+    <p
+      class="Snowman-wrongGuesses"
+    >
+      Number wrong: 
+      4
+    </p>
+    <p
+      class="Snowman-word"
+    >
+      _
+      _
+      _
+      _
+      _
+    </p>
+    <p
+      class="Snowman-endmessage"
+    >
+      You Lose, the correct word is 
+      apple
+    </p>
+  </div>
+</div>
+`;
