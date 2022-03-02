@@ -5,7 +5,7 @@ import Snowman from "./Snowman";
 function App() {
   return (
     <div className="App">
-      <Snowman />
+      <Snowman maxGuesses={6} />
     </div>
   );
 }

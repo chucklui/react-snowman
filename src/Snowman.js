@@ -13,7 +13,7 @@ import img6 from "./6.png";
 /** Snowman game: plays hangman-style game with a melting snowman.
  *
  * Props:
- * - maxWrong: how many wrong moves is a player allowed?
+ * - maxGuesses: how many wrong moves is a player allowed?
  * - images: array of images for wrong guess
  * - words: array of words to pick answer from
  *
@@ -26,7 +26,7 @@ import img6 from "./6.png";
 function Snowman({
       images=[img0, img1, img2, img3, img4, img5, img6],
       words=["apple"],
-      maxWrong=6,
+      maxGuesses=6
     }) {
   /** by default, allow 6 guesses and use provided gallows images. */
 
@@ -76,8 +76,9 @@ function Snowman({
   return (
       <div className="Snowman">
         <img src={(images)[nWrong]} alt={nWrong} />
+        <p className="Snowman-wrongGuesses">Number wrong: {nWrong}</p>
         <p className="Snowman-word">{guessedWord()}</p>
-        <p>{generateButtons()}</p>
+        <p className="Snowman-buttons">{generateButtons()}</p>
       </div>
   );
 }
